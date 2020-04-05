@@ -14,7 +14,7 @@ class StudentsController < ApplicationController
     if @student.active == true
       @student.update(active: false)
     else
-           @student.update(active: false)
+      @student.update(active: true)
     end
     redirect_to show
   end
